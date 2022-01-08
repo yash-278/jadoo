@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+strong {
+  position: relative;
+}
+strong::after {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  overflow: visible;
+  z-index: -1;
+  background-image: url("../img/underline.svg");
+  background-repeat: no-repeat;
+  background-size: fit;
+}
+p > strong {
+  font-weight: 400;
+}
+p > strong::after {
+  bottom: -0.2rem;
+  height: 0.5rem;
+  left: -0.25rem;
+  right: -0.25rem;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadoo</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="flex flex-col h-screen">
+      <!-- ! Navbar -->
+      <nav class="navbar font-montserrat">
+        <div class="max-w-7xl px-4 mx-auto">
+          <div class="flex justify-between">
+            <div class="space-x-7 flex">
+              <div>
+                <!--? Website Logo -->
+                <a href="#" class="md:py-0 flex items-center px-2 py-2">
+                  <img src="./img/Logo.svg" alt="Logo" class="w-14 md:w-28 md:h-20 h-12" />
+                </a>
+              </div>
+            </div>
+            <!--? Primary Navbar items -->
+            <div class="md:flex items-center hidden space-x-12 text-black transition">
+              <a href="" class="hover:text-orange-500 px-2 py-4 font-semibold">Destinations</a>
+              <a
+                href=""
+                class="hover:text-orange-500 px-2 py-4 font-semibold transition duration-300"
+              >
+                Hotels
+              </a>
+              <a
+                href=""
+                class="hover:text-orange-500 px-2 py-4 font-semibold transition duration-300"
+              >
+                Flights
+              </a>
+              <a
+                href=""
+                class="hover:text-orange-500 px-2 py-4 font-semibold transition duration-300"
+              >
+                Bookings
+              </a>
+              <a
+                href=""
+                class="hover:text-orange-500 px-2 py-4 font-semibold transition duration-300"
+              >
+                Login
+              </a>
+              <a
+                href=""
+                class="hover:bg-orange-500 hover:border-orange-500 hover:text-slate-50 px-4 py-1 font-semibold transition duration-300 border-2 border-orange-500 border-solid rounded"
+              >
+                Sign Up
+              </a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button outline-none">
+                <svg
+                  class="hover:text-rose-500 w-6 h-6 text-gray-500"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden shadow">
+          <ul class="">
+            <li class="active">
+              <a href="index.html" class="hover:bg-orange-300 block px-2 py-4 text-sm"
+                >Destinations</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:bg-orange-300 block px-2 py-4 text-sm transition duration-300"
+                >Hotels</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="hover:bg-orange-300 block px-2 py-4 text-sm transition duration-300"
+                >Flights</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="hover:bg-orange-300 block px-2 py-4 text-sm transition duration-300"
+                >Bookings</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:bg-orange-300 block px-2 py-4 text-sm transition duration-300"
+                >Login</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:bg-orange-300 block px-2 py-4 text-sm transition duration-300"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img class="md:h-screen -z-10 absolute top-0 right-0" src="./img/Decore.svg" alt="" />
+
+      <!-- ! Header -->
+      <div class="header max-w-7xl flex px-4 m-auto">
+        <div class="header-text flex flex-col justify-center w-1/2">
+          <h3 class="font-montserrat my-3 text-lg font-bold tracking-tight text-orange-600">
+            BEST DESTINATIONS AROUND THE WORLD
+          </h3>
+          <h1 class="font-merry text-7xl my-2 font-bold text-gray-800">
+            Travel,<strong>&nbsp;enjoy&nbsp;&nbsp;&nbsp;&nbsp;</strong> and live a new and full life
+          </h1>
+          <p class="font-montserrat my-3 font-semibold leading-7 text-gray-500">
+            The Nomad feature helps you to find the cheapest route for a multi-destination trip and
+            also offers pre-planned itineraries.
+          </p>
+          <div class="flex">
+            <button
+              class="bg-amber-400 hover:bg-amber-600 hover:shadow-amber-600/30 w-44 font-montserrat shadow-amber-400/30 py-3 font-medium text-white transition duration-300 rounded-lg shadow-xl"
+            >
+              Find out more
+            </button>
+            <a
+              class="shadow-red-500/30 bottom-0 px-3 py-3 mx-4 text-white bg-red-500 rounded-full shadow-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </a>
+            <span class="font-montserrat my-auto font-semibold tracking-tight text-gray-500"
+              >Play Demo</span
+            >
+          </div>
+        </div>
+        <div class="hero md:block hidden w-1/2">
+          <img src="./img/hero.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+      const nav = document.querySelector(".navbar");
+
+      btn.addEventListener("click", () => {
+        nav.classList.toggle("bg-white");
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
