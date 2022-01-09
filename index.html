@@ -75,7 +75,7 @@
           </div>
         </div>
         <!-- mobile menu -->
-        <div class="mobile-menu hidden shadow">
+        <div class="mobile-menu absolute z-30 hidden w-full bg-white shadow-xl">
           <ul class="">
             <li class="active">
               <a href="index.html" class="hover:bg-orange-300 block px-2 py-4 text-sm"
@@ -123,51 +123,59 @@
       <img class="md:h-screen -z-10 absolute top-0 right-0" src="./img/Decore.svg" alt="" />
 
       <!-- ! Header -->
-      <div class="header max-w-7xl flex px-4 m-auto">
-        <div class="header-text flex flex-col justify-center w-1/2">
-          <h3 class="font-montserrat my-3 text-lg font-bold tracking-tight text-orange-600">
+      <div class="header max-w-7xl md:px-4 flex m-auto">
+        <div class="header-text md:w-1/2 flex flex-col justify-center w-full">
+          <h3
+            class="font-montserrat md:text-lg px-2 my-3 text-xs font-bold tracking-tight text-orange-600"
+          >
             BEST DESTINATIONS AROUND THE WORLD
           </h3>
-          <h1 class="font-merry text-7xl my-2 font-bold text-gray-800">
-            Travel,<strong>&nbsp;enjoy&nbsp;&nbsp;&nbsp;&nbsp;</strong> and live a new and full life
+          <h1 class="font-merry md:text-7xl px-2 my-2 text-4xl font-bold text-gray-800">
+            Travel, <strong>enjoy&nbsp;&nbsp;</strong> and live a new and full life
           </h1>
-          <p class="font-montserrat my-3 font-semibold leading-7 text-gray-500">
+          <p
+            class="font-montserrat md:text-lg px-2 my-3 text-sm font-semibold leading-7 text-gray-500"
+          >
             The Nomad feature helps you to find the cheapest route for a multi-destination trip and
             also offers pre-planned itineraries.
           </p>
-          <div class="flex">
+          <div
+            class="md:flex-row md:items-start md:space-x-4 md:space-y-0 flex flex-col items-center px-2 my-5 space-y-5"
+          >
             <button
               class="bg-amber-400 hover:bg-amber-600 hover:shadow-amber-600/30 w-44 font-montserrat shadow-amber-400/30 py-3 font-medium text-white transition duration-300 rounded-lg shadow-xl"
             >
               Find out more
             </button>
-            <a
-              class="shadow-red-500/30 bottom-0 px-3 py-3 mx-4 text-white bg-red-500 rounded-full shadow-xl"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <div class="md:mx-0 m-auto">
+              <span
+                class="shadow-red-500/30 w-fit inline-block p-3 mr-4 text-white align-middle bg-red-500 rounded-full shadow-xl"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </a>
-            <span class="font-montserrat my-auto font-semibold tracking-tight text-gray-500"
-              >Play Demo</span
-            >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </span>
+              <span class="font-montserrat my-auto font-semibold tracking-tight text-gray-500">
+                Play Demo
+              </span>
+            </div>
           </div>
         </div>
         <div class="hero md:block hidden w-1/2">
